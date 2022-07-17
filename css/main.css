@@ -1,0 +1,469 @@
+/* Базовые стили для проекта */
+
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 4000px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+
+    position: relative;
+
+    font-family: 'Fira Code';
+    font-size: 16px;
+}
+
+/* Активные элементы меню */
+
+.active-list-item {
+    border-bottom: 2px solid #FEA55F;
+}
+
+.active-list-link {
+    color: #fff!important;
+}
+
+/* Основные стили */
+
+/* Верхний header  */
+.header {
+    width: 100%;
+    height: 100vh;
+    background: #1E2D3D;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+    
+    background: #1E2D3D;
+    color: #607B96;
+    border-top: 1px solid #607B96;
+    border-bottom: 1px solid #607B96;
+}
+
+.header__logo {
+    padding-left: 2rem;
+    padding-right: 3rem;
+    height: 100%;
+    width: 15%;
+    
+    border-right: 1px solid #607B96;
+
+    display: flex;
+    align-items: center;
+} 
+
+.__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 100%;
+
+    
+}
+
+.__menu__list {
+    display: flex;
+}
+
+.__menu__item {
+    border-right: 1px solid #607B96;
+    border-left: 1px solid #607B96;
+
+    display: flex;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.__menu__link {
+    text-decoration: none;
+    color: #607B96;
+    padding: 0 1rem 0 1rem;
+}
+
+.__menu__item-contact {
+    height: 100%;
+    width: 15%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-left: 1px solid #607B96;
+    cursor: pointer;
+}
+
+/* Нижний footer */
+
+.header__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+
+    background: #1E2D3D;
+    color: #607B96;
+    border-top: 1px solid #607B96;
+    border-bottom: 1px solid #607B96;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.find-info {
+    height: 100%;
+    width: 30%;
+
+    display: flex;
+}
+
+.find-info__text {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+
+    padding: 0 1rem 0 1rem;
+
+    
+}
+
+.find-info__telegram {
+    height: 100%;
+    width: 15%;
+
+    border-right: 1px solid #607B96;
+    border-left: 1px solid #607B96;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+path {
+    transition: .5s ease;
+}
+
+.find-info__telegram:hover path {
+    fill: #D9D9D9;
+    
+}
+
+
+
+.git-user {
+    height: 100%;
+    width: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-left: 1px solid #607B96;
+    cursor: pointer;
+
+    transition: .5s ease;
+}
+
+.git-user svg {
+    margin-left: 1rem;
+}
+
+.git-user:hover {
+    color: #fff;
+}
+
+.git-user:hover path {
+    fill: #D9D9D9;
+}
+
+/* Основной content на главной страницы */
+.header__content {
+    width: 100%;
+    
+    display: flex;
+
+}
+
+.header__content-main-block {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+
+    transform: translate(0, -50%);
+
+    display: flex;
+
+    color: #fff;  
+}
+
+.preview-text {
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: 450;
+
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.main-title {
+    width: 100%;
+
+    font-size: 62px;
+    font-weight: 400;
+    
+    padding-bottom: 2rem;
+}
+
+.subtitle {
+    width: 100%;
+
+    font-size: 32px;
+    font-weight: 450;
+    color: #4D5BCE;
+
+    padding-bottom: .5rem;
+    padding-left: 2rem;
+
+    cursor: pointer;
+}
+
+.comment-text {
+    padding-top: 65px;
+
+    color: #607B96;
+}
+
+.comment-text__item {
+    line-height: 1.5rem;
+}
+
+.js-text {
+    padding-top: 2rem;
+}
+
+.js-text__blue {
+    color: #4D5BCE;
+}
+
+.js-text__green {
+    color: #43D9AD;
+}
+
+.js-text__link {
+    text-decoration: none;
+    color: #E99287;
+}
+
+.subtitle:hover {
+    text-decoration: underline;
+}
+
+.js-text__link:hover {
+    text-decoration: underline;
+}
+
+.header__content-copy {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 1;
+
+}
+
+.header__content-game {
+    width: 50%;
+    
+    background: url('../images/background-game.png') no-repeat center;
+
+    position: relative;
+}
+
+.header__content-bolt-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-game__left {
+    width: 50%;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.game-canvas {
+    width: 50%;
+    height: 100%;
+
+    background-color: #011627;
+
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+}
+
+.game-canvas__btn {
+   position: absolute;
+   bottom: 2rem;
+   z-index: 1000;
+
+   color: #000;
+   background: #FEA55F;
+   border: none;
+   outline: none;
+   border-radius: .5rem;
+   font-family: 'Fira Code', sans-serif;
+
+   padding: .5rem;
+
+   transition: .5s ease;
+
+}
+
+.game-canvas__btn:hover {
+    background: #fea45f81;
+    color: rgba(255, 255, 255, 0.461);
+}
+
+.content-game__right {
+   position: absolute;
+   right: .5rem;
+   z-index: 1000;
+   bottom: 12rem;
+
+}
+
+.content-game__keyboard {
+    background: rgba(1, 20, 35, .19);
+    border-radius: 1rem;
+
+    padding: .4rem;
+}
+
+.content-game__keyboard {
+    font-size: 14px;
+}
+
+.keyboard__content {
+    padding-bottom: 1rem;
+}
+
+.keyboard-text {
+    line-height: 1.2rem;
+}
+
+.keyboard-btn__up {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 0.5rem;
+}
+
+.keyboard-btn__down {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.keyboard-btn__up-item, .keyboard-btn__down-item {
+    background: #000;
+    color: #fff;
+    border-radius: .3rem;
+    border: none;
+
+    padding: .5rem;
+
+    transition: .5s ease;
+}
+
+.keyboard-btn__up-item:hover, .keyboard-btn__down-item:hover {
+    background: rgba(0, 0, 0, 0.409);
+    color: #fff;
+}
+
+.foods__content {
+    position: absolute;
+    top: 10rem;
+
+    width: 100%;
+}
+
+.foods-group {
+    padding-top: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.food {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 100%;
+    background: #43D9AD;
+    box-shadow: 0 0 5px 2px #43D9AD;
+
+    margin-right: 0.2rem;
+
+}
+
+.skip__btn {
+    position: absolute;
+    top: 17rem;
+    right: 1rem;
+
+    font-family: 'Fira Code', sans-serif;
+    border: 1px solid #fff;
+    border-radius: .3rem;
+
+    padding: .5rem;
+
+    transition: .5s ease;
+
+ 
+}
+
+.skip {
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+
+    transition: .5s ease;
+}
+
+.skip__btn:hover  {
+    border: 1px solid #ffffff7a;
+    color: #ffffff7a;
+}
+.skip__btn:hover .skip{
+    color: #ffffff7a;
+}
