@@ -1,0 +1,56 @@
+@media (max-width: 1000px) {
+    /* Основные стили для адаптива */
+
+    body {
+        text-align: center;
+    }
+
+    .header__logo {
+        display: none!important;
+    }
+
+    .header__menu {
+        padding-left: 1rem;
+    }
+
+    .__menu__item-contact {
+        border: none!important;
+    }
+
+    .header__content-main-block {
+        width: 100%;
+    }
+
+    .__menu__list {
+       display: none!important;
+    }
+
+    .preview-text {
+        font-size: 18px!important;
+    }
+
+    .main-title {
+        font-size: 62px!important;
+        width: 7rem;
+    }
+
+    .subtitle {
+        font-size: 18px!important;
+    }
+
+    .comment-text__item:first-child {
+        display: none!important;
+    }
+
+    .js-text__link {
+        line-height: 2rem!important;
+    }
+
+    .header__footer {
+        display: none!important;
+    }
+
+    .header__content-game {
+        display: none;
+    }
+}
