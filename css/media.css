@@ -33,6 +33,7 @@
 
         margin-right: 1rem!important;
         margin-bottom: .5rem!important;
+        margin-top: .5rem;
 
         position: relative!important;
         z-index: 1001!important;
@@ -101,6 +102,16 @@
 
     .header__content-game {
         display: none;
+    }
+
+    .find-info {
+        justify-content: space-between!important;
+
+        width: 100%!important;
+    }
+
+    .git-user {
+        display: none!important;
     }
 }
 /* Планшеты */
@@ -198,7 +209,13 @@
         line-height: 2rem!important;
     }
 
-    .header__footer {
+    .find-info {
+        justify-content: space-between!important;
+
+        width: 100%!important;
+    }
+
+    .git-user {
         display: none!important;
     }
 

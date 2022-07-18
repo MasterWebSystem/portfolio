@@ -36,6 +36,10 @@ body {
     transition: .5s ease!important;
 }
 
+.active-footer {
+    display: block!important;
+}
+
 
 
 /* Основные стили */
@@ -251,7 +255,7 @@ body {
 
 .find-info__telegram {
     height: 100%;
-    width: 15%;
+    width: 40%;
 
     border-right: 1px solid #607B96;
     border-left: 1px solid #607B96;
@@ -270,6 +274,10 @@ path {
 .find-info__telegram:hover path {
     fill: #D9D9D9;
     
+}
+
+.find-info__item {
+    padding: 0 1rem 0 1rem;
 }
 
 
