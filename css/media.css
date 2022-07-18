@@ -1,24 +1,176 @@
-@media (max-width: 1000px) {
+/* Телефоны */
+
+
+@media (max-width: 767px) {
     /* Основные стили для адаптива */
 
-    body {
-        text-align: center;
-    }
+   
 
     .header__logo {
-        display: none!important;
+        border: none!important;
+        width: 80%!important;
     }
 
     .header__menu {
         padding-left: 1rem;
+
+        position: relative;
+        z-index: 1001;
+    }
+
+    .__menu {
+        display: none!important;
     }
 
     .__menu__item-contact {
-        border: none!important;
+       display: none!important;
+    }
+
+    .burger-menu {
+        display: flex!important;
+
+        width: 10%!important;
+
+        margin-right: 1rem!important;
+        margin-bottom: .5rem!important;
+
+        position: relative!important;
+        z-index: 1001!important;
+    }
+
+    .burger-menu.active-menu-burger:before {
+        position: absolute!important;
+        top: 1rem;
+
+        transform: rotate(45deg)!important;
+        transition: .5s ease!important;
+    }
+
+    .burger-menu.active-menu-burger:after {
+        position: absolute!important;
+        top: 1rem;
+
+        transform: rotate(-45deg)!important;
+        transition: .5s ease!important;
+    }
+
+    .burger-menu.active-menu-burger span {
+        display: none;
+
+        transition: .5s ease!important;
     }
 
     .header__content-main-block {
-        width: 100%;
+        width: 100%!important;
+
+        display: flex!important;
+        justify-content: center!important;
+        align-items: center!important;
+
+        text-align: center;
+    }
+
+    .__menu__list {
+       display: none!important;
+    }
+
+    .preview-text {
+        font-size: 18px!important;
+    }
+
+    .main-title {
+        font-size: 62px!important;
+        width: 7rem;
+    }
+
+    .subtitle {
+        font-size: 18px!important;
+    }
+
+    .comment-text__item:first-child {
+        display: none!important;
+    }
+
+    .js-text__link {
+        line-height: 2rem!important;
+    }
+
+    .header__footer {
+        display: none!important;
+    }
+
+    .header__content-game {
+        display: none;
+    }
+}
+/* Планшеты */
+
+
+@media (min-width: 768px) AND (max-width: 1000px) {
+    /* Основные стили */
+
+
+    .header__logo {
+        border: none!important;
+        width: 80%!important;
+    }
+
+    .header__menu {
+        padding-left: 1rem;
+
+        position: relative;
+        z-index: 1001;
+    }
+
+    .__menu {
+        display: none!important;
+    }
+
+    .__menu__item-contact {
+       display: none!important;
+    }
+
+    .burger-menu {
+        display: flex!important;
+
+        width:  50px!important;
+
+        margin-bottom: .5rem!important;
+
+        position: relative!important;
+        z-index: 1001!important;
+    }
+
+    .burger-menu.active-menu-burger:before {
+        position: absolute!important;
+        top: 1rem;
+
+        transform: rotate(45deg)!important;
+        transition: .5s ease!important;
+    }
+
+    .burger-menu.active-menu-burger:after {
+        position: absolute!important;
+        top: 1rem;
+
+        transform: rotate(-45deg)!important;
+        transition: .5s ease!important;
+    }
+
+    .burger-menu.active-menu-burger span {
+        display: none;
+
+        transition: .5s ease!important;
+    }
+
+    .header__content-main-block {
+        width: 100%!important;
+
+        display: flex!important;
+        justify-content: center!important;
+        align-items: center!important;
+
+        text-align: center;
     }
 
     .__menu__list {
