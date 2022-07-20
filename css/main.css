@@ -40,6 +40,11 @@ body {
     display: block!important;
 }
 
+.active-desc__code {
+    transform: translateX(0)!important;
+    z-index: 2!important;
+}
+
 
 
 /* Основные стили */
@@ -311,6 +316,7 @@ path {
 /* Основной content на главной страницы */
 .header__content {
     width: 100%;
+    height: 100%;
     
     display: flex;
 
@@ -583,3 +589,329 @@ path {
 .skip__btn:hover .skip{
     color: #ffffff7a;
 }
+
+/* Content обо мне */
+
+.header__content-about-block {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+}
+
+.left-bar {
+    height: 100%;
+    width: 70px;
+
+    border-left: 1px solid #ffffff7a;
+    border-right: 1px solid #ffffff7a;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-bar__item {
+    margin-bottom: 2rem;
+
+    cursor: pointer;
+}
+
+.left-bar__info {
+    margin-top: 1rem;
+}
+
+.folder-block {
+    border-right: 1px solid #ffffff7a;
+
+    max-width: 240px;
+    width: 100%;
+}
+
+.personal-info__block, .contacts-info__block {
+    width: 100%;
+
+    padding: 1rem;
+
+    border-bottom: 1px solid #ffffff7a;
+    color: #fff;
+}
+
+.folder-block__block {
+    padding: 1rem;
+
+    color: #fff;
+}
+
+.folder-block__item {
+    margin-bottom: 1rem;
+}
+
+.file-block__item {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.contacts-info__block {
+    border-top: 1px solid #ffffff7a;
+}
+
+.contacts-info-block {
+    padding: 1rem;
+
+    font-size: 13px;
+    color: #607B96;
+}
+
+.contacts-info__item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+}
+
+.contacts-info__item span {
+    margin-left: 0.4rem;
+}
+
+svg.down-arrow {
+    transform: rotate(90deg);
+}
+
+.about-me-block {
+    width: 100%;
+}
+
+.about-me__header {
+    border: 1px solid #607B96;
+    
+
+    width: 100%;
+}
+
+.tab-personal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-right: 1px solid #607B96;
+    color: #607B96;
+
+    height: 100%;
+    width: 40%;
+
+    padding: .5rem;
+}
+.about-me__body {
+    color: #607B96;
+
+    display: flex;
+
+    width: 100%;
+
+    height: 100%;
+
+
+}
+
+.about-me__item {
+    width: 50%;
+    height: 100%;
+}
+
+.about-me__content {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 100%;
+
+    overflow: auto;
+
+    /* border-right: 1px solid #607B96; */
+}
+
+
+
+.about-me__numbers {
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+}
+
+.about-me__numbers-item {
+    padding-bottom: .5rem;
+}
+
+.about-me__text {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    margin-left: -10rem;
+
+}
+
+.about-me__text-item {
+    padding-bottom: 0.5rem;
+}
+
+.about-me__scroll {
+    width: 7%;
+    height: 100%;
+
+    border-left: 1px solid #607B96;
+    border-right: 1px solid #607B96;
+
+   
+
+
+}
+
+.scroll {
+    width: 18px;
+    height: 7px;
+
+    background: #607B96;
+
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.--header-p {
+    padding: 1.1rem;
+}
+
+.--fd {
+    flex-direction: column;
+    justify-content: start;
+}
+
+.about-me__content-text {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+
+
+.user-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+    padding: 3rem 1rem 10rem 1rem;
+}
+
+.user-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    margin-right: 1rem;
+}
+
+.icon img {
+    width: 100%;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+.user-name {
+    margin-bottom: .5rem;
+
+    color: #5565E8;
+}
+
+.details-info {
+    display: flex;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: .5s ease;
+}
+
+.details:hover {
+    color: #fff;
+}
+
+.details:hover .path {
+    fill: #fff;
+}
+
+.details svg {
+    margin-right: 0.3rem;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.stars svg {
+    margin-left: 0.5rem;
+    margin-right: 0.3rem;
+}
+
+.stars span:nth-child(2) {
+    margin-right: .3rem;
+}
+
+.code {
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    background-color: #011221;
+    border: 3px solid #1E2D3D;
+    border-radius: .6rem;
+
+    width: 95%;
+    height: 200px;
+
+    display: block;
+}
+
+.desc__code {
+    display: flex;
+    justify-content: space-between;
+
+    width: 95%;
+
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1.5rem;
+
+    border-top: 1px solid #607B96;
+
+    transform: translateX(100%);
+    transition: .5s ease;
+
+    z-index: -1;
+}
+
+.close {
+    cursor: pointer;
+
+    width: 10%;
+    height: 10%;
+
+    transition: .5s ease;
+}
+
+.close:hover .close-path {
+    fill: #fff;
+}
+
+
+
