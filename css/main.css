@@ -5,7 +5,9 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-y: hidden;
+
+    background: #1E2D3D;
 }
 
 .container {
@@ -641,6 +643,7 @@ path {
     padding: 1rem;
 
     color: #fff;
+
 }
 
 .folder-block__item {
@@ -894,7 +897,7 @@ svg.down-arrow {
 
     border-top: 1px solid #607B96;
 
-    transform: translateX(100%);
+    transform: translateX(110%);
     transition: .5s ease;
 
     z-index: -1;

@@ -4,7 +4,14 @@
 @media (max-width: 767px) {
     /* Основные стили для адаптива */
 
-   
+    body {
+        overflow-x: hidden!important;
+        overflow-y: auto!important;
+    }
+
+    .header {
+        height: 100%!important;
+    }
 
     .header__logo {
         border: none!important;
@@ -111,6 +118,68 @@
     }
 
     .git-user {
+        display: none!important;
+    }
+
+    .header__content-about-block {
+        flex-direction: column;
+    }
+
+    .left-bar {
+        display: none!important;
+    }
+
+    .folder-block {
+        border: none!important;
+
+        width: 100%;
+        max-width: 100%!important;
+    }
+
+    .about-me__item {
+        margin: 0 auto;
+
+        width: 100%!important;
+        
+        text-align: center;
+    }
+
+    .about-me__text-item span{
+        display: none!important;
+    }
+
+    .about-me__content-text {
+        text-align: center;
+    }
+
+    .personal-info__block, .contacts-info__block {
+        border: none!important;
+        background: #2b435d;
+
+        width: 100%!important;
+    }
+
+    .about-me__body {
+        flex-direction: column;
+    }
+
+    .about-me__content {
+        flex-direction: column;
+    }
+
+    .about-me__header {
+        display: none!important;
+    }
+
+    .about-me__scroll {
+        display: none!important;
+    }
+
+    .about-me__numbers {
+        display: none!important;
+    }
+
+    .stars {
         display: none!important;
     }
 }
