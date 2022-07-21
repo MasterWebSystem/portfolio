@@ -3,11 +3,11 @@
 
 @media (max-width: 767px) {
     /* Основные стили для адаптива */
-
+      
     body {
-        overflow-x: hidden!important;
         overflow-y: auto!important;
     }
+  
 
     .header {
         height: 100%!important;
@@ -182,6 +182,10 @@
     .stars {
         display: none!important;
     }
+
+    .user-group {
+        overflow-x: hidden;
+    }
 }
 /* Планшеты */
 
@@ -189,6 +193,15 @@
 @media (min-width: 768px) AND (max-width: 1000px) {
     /* Основные стили */
 
+
+    body {
+        overflow-y: auto!important;
+    }
+  
+
+    .header {
+        height: 100%!important;
+    }
 
     .header__logo {
         border: none!important;
@@ -213,9 +226,11 @@
     .burger-menu {
         display: flex!important;
 
-        width:  50px!important;
+        width: 10%!important;
 
+        margin-right: 1rem!important;
         margin-bottom: .5rem!important;
+        margin-top: .5rem;
 
         position: relative!important;
         z-index: 1001!important;
@@ -278,6 +293,14 @@
         line-height: 2rem!important;
     }
 
+    .header__footer {
+        display: none!important;
+    }
+
+    .header__content-game {
+        display: none;
+    }
+
     .find-info {
         justify-content: space-between!important;
 
@@ -288,7 +311,69 @@
         display: none!important;
     }
 
-    .header__content-game {
-        display: none;
+    .header__content-about-block {
+        flex-direction: column;
+    }
+
+    .left-bar {
+        display: none!important;
+    }
+
+    .folder-block {
+        border: none!important;
+
+        width: 100%;
+        max-width: 100%!important;
+    }
+
+    .about-me__item {
+        margin: 0 auto;
+
+        width: 100%!important;
+        
+        text-align: center;
+    }
+
+    .about-me__text-item span{
+        display: none!important;
+    }
+
+    .about-me__content-text {
+        text-align: center;
+    }
+
+    .personal-info__block, .contacts-info__block {
+        border: none!important;
+        background: #2b435d;
+
+        width: 100%!important;
+    }
+
+    .about-me__body {
+        flex-direction: column;
+    }
+
+    .about-me__content {
+        flex-direction: column;
+    }
+
+    .about-me__header {
+        display: none!important;
+    }
+
+    .about-me__scroll {
+        display: none!important;
+    }
+
+    .about-me__numbers {
+        display: none!important;
+    }
+
+    .stars {
+        display: none!important;
+    }
+
+    .user-group {
+        overflow-x: hidden;
     }
 }
