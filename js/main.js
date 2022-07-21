@@ -18,8 +18,7 @@ var linkAbout = document.getElementById('linkAbout');
 var aboutBlock = document.getElementById('aboutBlock');
 
 
-aboutBlock.style.display = 'none';
-mainBlock.style.display = 'flex';
+
 
 linkHello.addEventListener('click', () => {
   linkHelloItem.classList.add('active-list-item');
@@ -39,6 +38,36 @@ linkAbout.addEventListener('click', () => {
     aboutBlock.style.display = 'flex';
     mainBlock.style.display = 'none';
 });
+
+// Переключатель burgerMenu 
+
+var helloBurgerItem = document.getElementById('helloBurgerItem');
+var aboutBurgerItem = document.getElementById('aboutBurgerItem');
+
+helloBurgerItem.addEventListener('click', () => {
+    aboutBlock.setAttribute('style', 'display: none !important')
+    mainBlock.setAttribute('style', 'display: flex !important')
+
+    if (wrapperBurgerMenu.classList.contains('active-wrapper-menu') && burgerMenu.classList.contains('active-menu-burger') && footer.classList.contains('active-footer')) {
+        wrapperBurgerMenu.classList.remove('active-wrapper-menu');
+        burgerMenu.classList.remove('active-menu-burger');
+        footer.classList.remove('active-footer');
+    }
+});
+
+aboutBurgerItem.addEventListener('click', () => {
+    mainBlock.setAttribute('style', 'display: none !important');
+    aboutBlock.setAttribute('style', 'display: flex !important');
+
+    if (wrapperBurgerMenu.classList.contains('active-wrapper-menu') && burgerMenu.classList.contains('active-menu-burger') && footer.classList.contains('active-footer')) {
+        wrapperBurgerMenu.classList.remove('active-wrapper-menu');
+        burgerMenu.classList.remove('active-menu-burger');
+        footer.classList.remove('active-footer');
+    }
+
+});
+
+
 
 
 // Обработчик для details
