@@ -61,10 +61,12 @@ linkProjects.addEventListener('click', () => {
 
 var helloBurgerItem = document.getElementById('helloBurgerItem');
 var aboutBurgerItem = document.getElementById('aboutBurgerItem');
+var projectsBurgerItem = document.getElementById('projectsBurgerItem');
 
 helloBurgerItem.addEventListener('click', () => {
     aboutBlock.setAttribute('style', 'display: none !important')
     mainBlock.setAttribute('style', 'display: flex !important')
+    projectsBlock.setAttribute('style', 'display: none !important');
 
     if (wrapperBurgerMenu.classList.contains('active-wrapper-menu') && burgerMenu.classList.contains('active-menu-burger') && footer.classList.contains('active-footer')) {
         wrapperBurgerMenu.classList.remove('active-wrapper-menu');
@@ -76,6 +78,20 @@ helloBurgerItem.addEventListener('click', () => {
 aboutBurgerItem.addEventListener('click', () => {
     mainBlock.setAttribute('style', 'display: none !important');
     aboutBlock.setAttribute('style', 'display: flex !important');
+    projectsBlock.setAttribute('style', 'display: none !important');
+
+    if (wrapperBurgerMenu.classList.contains('active-wrapper-menu') && burgerMenu.classList.contains('active-menu-burger') && footer.classList.contains('active-footer')) {
+        wrapperBurgerMenu.classList.remove('active-wrapper-menu');
+        burgerMenu.classList.remove('active-menu-burger');
+        footer.classList.remove('active-footer');
+    }
+
+});
+
+projectsBurgerItem.addEventListener('click', () => {
+    mainBlock.setAttribute('style', 'display: none !important');
+    aboutBlock.setAttribute('style', 'display: none !important');
+    projectsBlock.setAttribute('style', 'display: flex !important');
 
     if (wrapperBurgerMenu.classList.contains('active-wrapper-menu') && burgerMenu.classList.contains('active-menu-burger') && footer.classList.contains('active-footer')) {
         wrapperBurgerMenu.classList.remove('active-wrapper-menu');
