@@ -5,7 +5,7 @@
 }
 
 body {
-    overflow-y: hidden;
+    overflow: hidden;
 
     background: #1E2D3D;
 }
@@ -727,11 +727,17 @@ svg.down-arrow {
     width: 100%;
 }
 
-.about-me__header {
+.about-me__header, .projects__header {
     border: 1px solid #607B96;
     
 
     width: 100%;
+}
+
+.projects__header {
+    position: absolute;
+    top: 3.1rem;
+
 }
 
 .tab-personal {
@@ -743,7 +749,7 @@ svg.down-arrow {
     color: #607B96;
 
     height: 100%;
-    width: 40%;
+    width: 20%;
 
     padding: .5rem;
 }
@@ -970,9 +976,26 @@ svg.down-arrow {
     display: flex;
 }
 
+.adaptive__text {
+    display: none;
+}
+
 .projects-block__item {
     padding: 0 2rem;
 }
+
+.projects-block__icon {
+   position: absolute;
+   left: 80%;
+   top: 10%;
+
+   background: #86E1F9;
+   border-radius: .2rem;
+
+   padding: .3rem;
+}
+
+
 
 .projects-block__title {
     color: #607B96;
@@ -993,6 +1016,9 @@ svg.down-arrow {
     padding: 1rem;
 
     width: 100%;
+
+    position: relative;
+
 }
 
 .projects-block__image {

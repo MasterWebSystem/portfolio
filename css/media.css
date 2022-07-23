@@ -152,7 +152,7 @@
         text-align: center;
     }
 
-    .personal-info__block, .contacts-info__block {
+    .personal-info__block, .contacts-info__block, .projects-info__block {
         border: none!important;
         background: #2b435d;
 
@@ -186,6 +186,38 @@
     .user-group {
         overflow-x: hidden;
     }
+
+    .header__content-projects-block {
+        flex-direction: column;
+    }
+
+    .projects__header {
+        display: none!important;
+    }
+
+    .projects-block__body {
+        flex-direction: column!important;
+    }
+
+    .adaptive__text {
+        display: block!important;
+
+        margin-left: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+        color: #fff;
+    }
+
+    .adaptive__text span {
+        color: #607B96;
+    }
+
+    .projects-block__item {
+        margin-top: 1rem!important;
+    }
+
+    
 }
 /* Планшеты */
 
@@ -342,7 +374,7 @@
         text-align: center;
     }
 
-    .personal-info__block, .contacts-info__block {
+    .personal-info__block, .contacts-info__block, .projects-info__block {
         border: none!important;
         background: #2b435d;
 
