@@ -152,7 +152,7 @@
         text-align: center;
     }
 
-    .personal-info__block, .contacts-info__block, .projects-info__block {
+    .personal-info__block, .contacts-info__block, .projects-info__block, .findSoc {
         border: none!important;
         background: #2b435d;
 
@@ -215,6 +215,27 @@
 
     .projects-block__item {
         margin-top: 1rem!important;
+    }
+
+    .header__content-contacts-block {
+        flex-direction: column;
+    }
+
+    .contacts__header {
+        display: none!important;
+    }
+
+    .form {
+        width: 100%!important;
+
+        margin: 1rem auto;
+
+        border: none!important;
+
+    }
+
+    .contacts__code {
+        display: none!important;
     }
 
     
@@ -374,7 +395,7 @@
         text-align: center;
     }
 
-    .personal-info__block, .contacts-info__block, .projects-info__block {
+    .personal-info__block, .contacts-info__block, .projects-info__block, .findSoc {
         border: none!important;
         background: #2b435d;
 
