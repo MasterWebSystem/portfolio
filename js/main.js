@@ -92,6 +92,7 @@ helloBurgerItem.addEventListener('click', () => {
     aboutBlock.setAttribute('style', 'display: none !important')
     mainBlock.setAttribute('style', 'display: flex !important')
     projectsBlock.setAttribute('style', 'display: none !important');
+    contactsBlock.setAttribute('style', 'display: none !important');
 
     if (wrapperBurgerMenu.classList.contains('active-wrapper-menu') && burgerMenu.classList.contains('active-menu-burger') && footer.classList.contains('active-footer')) {
         wrapperBurgerMenu.classList.remove('active-wrapper-menu');
@@ -104,6 +105,7 @@ aboutBurgerItem.addEventListener('click', () => {
     mainBlock.setAttribute('style', 'display: none !important');
     aboutBlock.setAttribute('style', 'display: flex !important');
     projectsBlock.setAttribute('style', 'display: none !important');
+    contactsBlock.setAttribute('style', 'display: none !important');
 
     if (wrapperBurgerMenu.classList.contains('active-wrapper-menu') && burgerMenu.classList.contains('active-menu-burger') && footer.classList.contains('active-footer')) {
         wrapperBurgerMenu.classList.remove('active-wrapper-menu');
@@ -117,6 +119,7 @@ projectsBurgerItem.addEventListener('click', () => {
     mainBlock.setAttribute('style', 'display: none !important');
     aboutBlock.setAttribute('style', 'display: none !important');
     projectsBlock.setAttribute('style', 'display: flex !important');
+    contactsBlock.setAttribute('style', 'display: none !important');
 
     if (wrapperBurgerMenu.classList.contains('active-wrapper-menu') && burgerMenu.classList.contains('active-menu-burger') && footer.classList.contains('active-footer')) {
         wrapperBurgerMenu.classList.remove('active-wrapper-menu');
