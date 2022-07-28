@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #1E2D3D;
+    padding: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #607B96;
+}
+
 body {
     overflow: hidden;
 
@@ -70,7 +83,8 @@ body {
     border-top: 1px solid #607B96;
     border-bottom: 1px solid #607B96;
 
-
+    position: relative;
+    z-index: 9999;
 }
 
 .header__logo {
@@ -638,8 +652,58 @@ path {
 
     border-bottom: 1px solid #ffffff7a;
     color: #fff;
+
+    position: relative;
+    z-index: 5;
+
 }
 
+.personal-info__block {
+    background-color: #1E2D3D;
+}
+
+.personal-info__block svg {
+    transform: rotate(0);
+
+    transition: .5s ease;
+}
+
+
+
+.active-svg {
+    transition: .5s ease;
+    transform: rotate(-90deg)!important;
+}
+
+.active-svg-contact {
+    transition: .5s ease;
+    transform: rotate(0deg)!important;
+}
+
+.active-personal-block, .active-contacts-block {
+    transition: .5s ease;
+    transform: translateY(0)!important;
+
+    position: relative;
+    z-index: 2;
+
+    background-color: #1E2D3D;
+}
+
+.active-personal-block + .contacts-info__block {
+    border-top: 1px solid #ffffff7a;
+    margin-top: 0;
+}
+
+
+.contacts-info__block {
+    transition: .5s ease!important;
+}
+
+.contacts-info__block svg {
+    transform: rotate(-90deg);
+    transition: .5s ease;
+}
 .findSoc {
     border-top: 1px solid #ffffff7a;
 }
@@ -648,6 +712,9 @@ path {
     padding: 1rem;
 
     color: #fff;
+
+    transition: .5s ease;
+    transform: translateY(-120%);
 }
 
 .folder-block__block-item {
@@ -693,7 +760,7 @@ path {
 }
 
 .folder-block__item {
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .file-block__item {
@@ -702,7 +769,20 @@ path {
 }
 
 .contacts-info__block {
-    border-top: 1px solid #ffffff7a;
+    border-top: none;
+    margin-top: -85%;
+
+    position: relative;
+    z-index: 5;
+
+    background-color: #1E2D3D;
+}
+
+.contacts-info-block__block {
+    position: relative;
+    z-index: 1;
+    transition: .5s ease;
+    transform: translateY(-100%);
 }
 
 .contacts-info-block, .findSoc-info-block {
@@ -756,6 +836,12 @@ svg.down-arrow {
     width: 40%;
 
     padding: .5rem;
+
+    transform: translateX(-100%);
+}
+
+.tab-personal svg {
+    cursor: pointer;
 }
 .about-me__body {
     color: #607B96;
@@ -781,8 +867,9 @@ svg.down-arrow {
     height: 100%;
 
     overflow: auto;
+    
 
-    /* border-right: 1px solid #607B96; */
+    border-right: 1px solid #607B96;
 }
 
 
@@ -800,35 +887,28 @@ svg.down-arrow {
 .about-me__text {
     padding-top: 2rem;
     padding-right: 2rem;
-    margin-left: -10rem;
 
 }
 
 .about-me__text-item {
     padding-bottom: 0.5rem;
+
+
+    line-height: 1.5;
 }
 
-.about-me__scroll {
-    width: 7%;
-    height: 100%;
-
-    border-left: 1px solid #607B96;
-    border-right: 1px solid #607B96;
-
-   
-
-
+.about-me__text-item span {
+    padding-right: 1rem;
 }
 
-.scroll {
-    width: 18px;
-    height: 7px;
+.about-me__text-item p {
+    display: inline-block;
 
-    background: #607B96;
-
-    margin: 0 auto;
-    margin-top: 0.3rem;
+    padding-left: 2rem;
 }
+
+
+
 
 .--header-p {
     padding: 1.1rem;
@@ -1198,6 +1278,87 @@ svg.down-arrow {
 .gray {
     color: #607B96;
 }
+
+/* Функционал  */
+
+.file-block {
+    transition: .5s ease;
+    transform: translateY(-110%);
+}
+
+.bio {
+    background-color: #1E2D3D;
+
+    position: relative;
+    z-index: 3;
+}
+
+.interest {
+    background-color: #1E2D3D;
+
+    position: relative;
+    z-index: 3;
+}
+
+.education {
+    background-color: #1E2D3D;
+    
+    position: relative;
+    z-index: 3;
+}
+
+.file-block {
+    position: relative;
+    z-index: 1;
+}
+
+.bio svg {
+    transition: .5s ease;
+    transform: rotate(90deg);
+}
+
+.interest svg {
+    transition: .5s ease;
+    transform: rotate(90deg);
+}
+
+.education svg {
+    transition: .5s ease;
+    transform: rotate(90deg);
+}
+
+.bio-svg-active {
+    transition: .5s ease;
+    transform: rotate(0deg)!important;
+}
+
+.interest-svg-active {
+    transition: .5s ease;
+    transform: rotate(0deg)!important;
+}
+
+.education-svg-active {
+    transition: .5s ease;
+    transform: rotate(0deg)!important;
+}
+
+.file-block-active {
+    transition: .5s ease;
+    transform: translateY(0);
+}
+
+.about-header-closed {
+    transition: .5s ease;
+    transform: translateX(-100%);
+}
+
+.about-header-opened {
+    transition: .5s ease;
+    transform: translateX(0);
+}
+
+
+
 
 
 
