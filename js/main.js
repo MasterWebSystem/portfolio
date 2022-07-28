@@ -1,3 +1,13 @@
+aboutMeText_1.style.display = 'none'; 
+aboutMeText_2.style.display = 'none';
+aboutMeText_3.style.display = 'none';
+aboutMeText_4.style.display = 'none';
+aboutMeText_5.style.display = 'none';
+
+
+
+
+
 // Обработчик для burger меню
 
 burgerMenu.addEventListener('click', function () {
@@ -142,6 +152,88 @@ contactsBurgerItem.addEventListener('click', () => {
     }
 
 });
+
+// Персональные данные
+
+closeAboutHeader.addEventListener('click', () => {
+    aboutHeader.classList.remove('about-header-opened');
+    aboutHeader.classList.add('about-header-closed');
+    personalSvg.classList.add('active-svg');
+    personalInfoAll.classList.remove('active-personal-block');
+    contactsInfoAll.classList.remove('active-contacts-block');
+    contactsSvg.classList.remove('active-svg-contact');
+    aboutMeText_5.style.display = 'none';
+    aboutMeText_4.style.display = 'none';
+    aboutMeText_3.style.display = 'none';
+    aboutMeText_2.style.display = 'none';
+    aboutMeText_1.style.display = 'none';
+});
+
+personalInfoBlock.addEventListener('click', () => {
+    personalSvg.classList.toggle('active-svg');
+    personalInfoAll.classList.toggle('active-personal-block');
+    aboutHeader.classList.remove('about-header-closed');
+    aboutHeader.classList.add('about-header-opened');
+    aboutHeaderSpan.innerText = 'personal-info';
+    aboutMeText_5.style.display = 'none';
+    aboutMeText_4.style.display = 'none';
+    aboutMeText_3.style.display = 'none';
+    aboutMeText_2.style.display = 'none';
+    aboutMeText_1.style.display = 'block';
+});
+
+contactsInfoBlock.addEventListener('click', () => {
+    contactsSvg.classList.toggle('active-svg-contact');
+    contactsInfoAll.classList.toggle('active-contacts-block');
+    aboutHeaderSpan.innerText = 'contacts';
+    aboutHeader.classList.remove('about-header-closed');
+    aboutHeader.classList.add('about-header-opened');
+    personalSvg.classList.add('active-svg');
+    personalInfoAll.classList.remove('active-personal-block');
+    aboutMeText_5.style.display = 'none';
+    aboutMeText_4.style.display = 'none';
+    aboutMeText_3.style.display = 'none';
+    aboutMeText_2.style.display = 'block';
+    aboutMeText_1.style.display = 'none';
+});
+
+// Функционал
+
+bio.addEventListener('click', () => {
+    bioSvg.classList.toggle('bio-svg-active');
+    aboutHeaderSpan.innerText = 'bio';
+    aboutMeText_5.style.display = 'none';
+    aboutMeText_4.style.display = 'none';
+    aboutMeText_3.style.display = '';
+    aboutMeText_2.style.display = 'none';
+    aboutMeText_1.style.display = 'none';
+
+});
+
+interest.addEventListener('click', () => {
+    aboutHeaderSpan.innerText = 'interests';
+    interestSvg.classList.toggle('interest-svg-active');
+    aboutMeText_5.style.display = 'none';
+    aboutMeText_4.style.display = 'block';
+    aboutMeText_3.style.display = 'none';
+    aboutMeText_2.style.display = 'none';
+    aboutMeText_1.style.display = 'none';
+});
+
+education.addEventListener('click', () => {
+    educationSvg.classList.toggle('education-svg-active');
+    aboutHeaderSpan.innerText = 'education';
+    aboutMeText_5.style.display = 'block';
+    aboutMeText_4.style.display = 'none';
+    aboutMeText_3.style.display = 'none';
+    aboutMeText_2.style.display = 'none';
+    aboutMeText_1.style.display = 'none';
+    fileBlock.classList.toggle('file-block-active');
+});
+
+
+
+
 
 
 

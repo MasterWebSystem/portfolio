@@ -159,6 +159,15 @@
         width: 100%!important;
     }
 
+    .active-personal-block + .contacts-info__block {
+        margin-top: -20%!important;
+    }
+
+    .contacts-info__block {
+        margin-top: -60%!important;
+    }
+
+
     .about-me__body {
         flex-direction: column;
     }
